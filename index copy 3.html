@@ -40,7 +40,7 @@
 <body class="bg-white text-slate-900">
 
 
-  <!-- header: cabecera de la página, va una sola vez top-0 z-10 -->
+  <!-- header: cabecera de la página, va una sola vez -->
   <header class="bg-slate-900 text-white flex flex-col gap-4 md:flex-row md:items-center md:justify-between px-6 py-6 md:px-10">
 
     <div>
@@ -67,7 +67,6 @@
         <!-- enlace a Sobre mí -->
         <li>
           <a href="#sobre-mi" class="hover:text-emerald-400 transition-colors">
-          
             Sobre mí
           </a>
         </li>
@@ -76,7 +75,6 @@
         <li>
           <a href="#skills" class="hover:text-emerald-400 transition-colors">
             Skills
-            
           </a>
         </li>
 
@@ -93,11 +91,6 @@
             Contacto
           </a>
         </li>
-        
-
-        
-
-        
 
         
 
@@ -137,7 +130,6 @@
           <h2 class="text-3xl font-bold mb-5">
             Sobre mí
           </h2>
-          <p class="text-slate-500 text-sm"></p>
 
           <p class="text-slate-600 text-lg leading-relaxed">
             Soy programador de en sistemas y me apasiona mejorar y hacer
@@ -167,16 +159,24 @@
 
 
 
-    <!-- Cajas -->
+    <!-- DESTACADOS -->
+    <section id="destacados" class="px-6 py-10">
 
+      <!-- cajas a la izquierda -->
+      <div class="flex flex-col md:flex-row gap-4">
 
-<div class="flex flex-col md:flex-row gap-4">
-  <div class="bg-sky-500 p-4">Caja 1</div>
-  <div class="bg-emerald-300 p-4">Caja 2</div>
-</div>
+        <div class="bg-sky-500 p-4 rounded-lg text-white">
+          Caja 1
+        </div>
 
-    <!-- Cajas -->
-  
+        <div class="bg-emerald-300 p-4 rounded-lg">
+          Caja 2
+        </div>
+
+      </div>
+
+    <!-- cierre de Destacados -->
+    </section>
 
 
 
@@ -191,7 +191,7 @@
 
 
       <!-- grilla de Skills -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
 
 
         <!-- primera skill -->
@@ -233,14 +233,6 @@
             Control de versiones y despliegue.
           </p>
 
-          </article>
-
-          
-          
-          
-
-          
-
         </article>
 
 
@@ -248,7 +240,6 @@
 
     <!-- cierre de Skills -->
     </section>
-    
 
 
     <!-- PROYECTOS -->
@@ -277,29 +268,10 @@
           Ver repositorio →
         </a>
 
-        
-
       </article>
 
-      
     <!-- cierre de Proyectos -->
     </section>
-
-
-
-    
-
-    
-
-
-
-
-
-
-
-    
-
-
 
 
     <!-- CONTACTO -->
@@ -344,8 +316,7 @@
             </div>
 
 
-
-            <!-------Correo ------------------>
+            <!-- Correo -->
             <div>
 
               <label
@@ -464,10 +435,6 @@
           >
             Enviar mensaje
           </button>
-
-          
-
-          
 
 
         </form>
